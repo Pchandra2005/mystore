@@ -1,0 +1,22 @@
+.container {
+    margin: 0;
+
+}
+.header {
+    background-color: rgb(247, 210, 216);
+    display: flex;
+    justify-content: space-between;
+}
+.productBlock {
+    background-color: orange;
+}
+.cartBlock {
+    background-color: silver;
+    width: 400px;
+    position: fixed;
+    top: 0px;
+    left: 70%;
+    height: 100%;
+    padding: 20px;
+    transition: 2s;
+}
