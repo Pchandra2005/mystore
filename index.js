@@ -27,7 +27,7 @@ const showTotal = () => {
 };
 
 const showOrders = () => {
-  let str = "";
+  let str = "<div style='padding:30px'><h3>My Orders</h3>";
   orders.map((value) => {
     if (value.customer === user.email) {
       str += `
@@ -83,6 +83,8 @@ const placeOrder = () => {
   orders.push(obj);
   cart = {};
   showCart();
+  hideCart();
+  showOrders();
   console.log(orders);
 };
 
