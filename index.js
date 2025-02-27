@@ -27,20 +27,20 @@ const showTotal = () => {
 };
 
 const showOrders = () => {
-  let str = "<div style='padding:30px'><h3>My Orders</h3>";
+  let str = "<div style='padding:30px'><h3>My Orders</h1>";
   orders.map((value) => {
     if (value.customer === user.email) {
       str += `
-      <li>
+      <div>
       ${value.customer}-
       ${value.orderValue}-
-      ${Object.keys(items).length}-
-      ${value.status}-
-      </li>
+      ${Object.keys(value.items).length}-
+      ${value.status}
+      </div>
       `;
     }
   });
-  divProducts.innerHTML = str;
+  divProducts.innerHTML = str + "</div>"
 };
 
 const showMain = () => {
@@ -82,8 +82,8 @@ const placeOrder = () => {
   };
   orders.push(obj);
   cart = {};
-  showCart();
-  hideCart();
+  showCart()
+  hideCart()
   showOrders();
   console.log(orders);
 };
@@ -120,8 +120,8 @@ function showLogin() {
   <div class='login'>
       <h2>Login Form</h2>
       <div id='msg'></div>
-      <p><input id="email" type="text"></p>
-      <p><input id="password" type="password"></p>
+      <p><input id="email" placeholder='Email Address' type="text"></p>
+      <p><input id="password" placeholder='Password' type="password"></p>
       <button onclick='chkUser()'>Log In</button>
       <p><button onclick='showForm()'>Create Account</button></p>
   </div>
@@ -183,13 +183,18 @@ const showProducts = () => {
       let str = "<div class='row'>";
       products.map((value) => {
         str += `
-          <div class='box'>
-          <h3>${value.name}</h3>
-          <p>${value.desc}</p>
-          <h4>$${value.price}</h4>
-          <button onclick=addToCart(${value.id})>Add to Cart</button>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="${value.image}" class="card-img-top" alt="${value.name}">
+              <div class="card-body">
+                <h5 class="card-title">${value.name}</h5>
+                <p class="card-text">${value.desc}</p>
+                <h6 class="card-subtitle mb-2 text-muted">$${value.price}</h6>
+                <button class="btn btn-primary" onclick="addToCart(${value.id})">Add to Cart</button>
+              </div>
+            </div>
           </div>
-          `;
+        `;
       });
       divProducts.innerHTML = str + "</div>";
     });

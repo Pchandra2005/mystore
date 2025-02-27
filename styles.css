@@ -6,12 +6,12 @@
   }
   .header {
       padding: 10px;
-      background-color:rgb(67, 101, 104);
+      background-color:pink;
       display: flex;
       justify-content: space-between;
   }
   .productBlock{
-      background-color: rgb(244, 189, 189);
+      background-color: silver;
   }
   .row {
       display: flex;
@@ -20,13 +20,13 @@
   
   }
   .box {
-      background-color: rgb(210, 194, 224);
+      background-color: white;
       margin: 10px;
       border-radius: 20px;
-      padding: 10px;
+      padding: 30px;
   }
   .cartBlock {
-      background-color: rgb(224, 231, 159);
+      background-color: silver;
       width: 300px;
       position: fixed;
       top:0px;
@@ -38,28 +38,31 @@
   
   .login {
       border: 1px solid black;
-      text-align: center;
-      padding: 100px;
-      margin: 10px;
-    
+      padding: 50px;
+      width: 500px;
+      margin: auto;
+   
   }
   
   .login input,button{
       margin: 10px;
       padding: 10px;
+      box-sizing: border-box;
   }
   
   .registration {
       border: 1px solid black;
       text-align: center;
-      padding: 100px;
-      margin: 10px;
+      padding: 50px;
+      width: 500px;
+      margin: auto;
   
   }
   
   .registration input,button{
       margin: 10px;
       padding: 10px;
+      box-sizing: border-box;
   }
   
   .menu li {
