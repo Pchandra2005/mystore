@@ -16,24 +16,28 @@
   {
     "id": 3,
     "name": "Product 3",
+    "image":"images/ninja.jpg",
     "desc": "Description of the product. Description of the product. ",
     "price": 30
   },
   {
       "id": 4,
       "name": "Product 4",
+      "image":"images/ninja.jpg",
       "desc": "Description of the product. Description of the product. ",
       "price": 60
     },
     {
       "id": 5,
       "name": "Product 5",
+      "image":"images/ninja.jpg",
       "desc": "Description of the product. Description of the product. ",
       "price": 30
     },
     {
       "id": 6,
       "name": "Product 6",
+      "image":"images/ninja.jpg",
       "desc": "Description of the product. Description of the product. ",
       "price": 45
     }
