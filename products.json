@@ -2,14 +2,14 @@
   {
     "id": 1,
     "name": "Ninja Hattori",
-    "image": "/images/ninja.jpg",
+    "image": "images/ninja.jpg",
     "desc": "Description of the product. Description of the product. ",
     "price": 25
   },
   {
     "id": 2,
     "name": "Ninja Hattori",
-    "image": "/images/ninja.png",
+    "image": "images/ninja.jpg",
     "desc": "Description of the product. Description of the product. ",
     "price": 45
   },
